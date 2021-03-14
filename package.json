@@ -1,0 +1,33 @@
+{
+  "name": "last-evil-buttplug-electron-makes-me-sad",
+  "version": "1.0.0",
+  "description": "Last Evil to Buttplug.io bridge, but in pure node and a web server, because Electron and Frida are why we couldn't have nice things.",
+  "main": "index.js",
+  "bin": "bin.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dist": "pkg . --targets node10-win-x64 --output dist/leb64.exe"
+  },
+  "pkg": {
+    "assets": [
+      "web/dist/**/*",
+      "mono-api/**/*",
+      "node_modules/frida-mono-api/**/*",
+      "node_modules/frida-ex-nativefunction/**/*"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mauabata/last-evil-buttplug-electron-makes-me-sad.git"
+  },
+  "author": "Mau Abata <mauabata@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mauabata/last-evil-buttplug-electron-makes-me-sad/issues"
+  },
+  "homepage": "https://github.com/mauabata/last-evil-buttplug-electron-makes-me-sad#readme",
+  "dependencies": {
+    "frida-inject": "^0.4.1",
+    "frida-mono-api": "git+https://github.com/freehuntx/frida-mono-api.git#master"
+  }
+}
