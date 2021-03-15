@@ -12,7 +12,8 @@ let ignored_fn = [
     'IsMouseButtonDown',
     'UpdateOmniCam',
     'AddCameraDistance',
-
+    'FixedUpdate',
+    'ParseEventSceneName'
 ]
 
 function traceClass(klassInst) {

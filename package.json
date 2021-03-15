@@ -10,10 +10,11 @@
   },
   "pkg": {
     "assets": [
-      "web/dist/**/*",
+      "web/build/**/*",
       "mono-api/**/*",
       "node_modules/frida-mono-api/**/*",
-      "node_modules/frida-ex-nativefunction/**/*"
+      "node_modules/frida-ex-nativefunction/**/*",
+      "node_modules/frida/**/*.node"
     ]
   },
   "repository": {
@@ -27,7 +28,12 @@
   },
   "homepage": "https://github.com/mauabata/last-evil-buttplug-electron-makes-me-sad#readme",
   "dependencies": {
+    "chrome-launcher": "^0.13.4",
+    "express": "^4.17.1",
+    "express-ws": "^4.0.0",
     "frida-inject": "^0.4.1",
-    "frida-mono-api": "git+https://github.com/freehuntx/frida-mono-api.git#master"
+    "frida-mono-api": "git+https://github.com/freehuntx/frida-mono-api.git#master",
+    "react-use-websocket": "^2.5.0",
+    "serve-static": "^1.14.1"
   }
 }
